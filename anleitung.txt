@@ -1,0 +1,62 @@
+Anleitung für die Git-Demo
+
+
+1. Günter: Projekt anlegen
+
+2. Günter: Projekt comitten ins lokale Repository
+
+3. Günter: Projekt auf Github sharen
+
+4. Sebi:   Clone von Github
+
+5a Günter: Neue Car-Klasse hinzufügen:
+		--> Klasse "SUV" hinzufügen
+		--> In "Car" licensePlate auf protected setzen
+
+public class SUV extends Car{
+
+	public SUV(String licensePlate, String owner, String address) {
+		super(licensePlate, owner, address);
+	}
+	
+	public String getLicensePlate(){
+		return super.licensePlate+" SUV";
+	}
+
+}
+
+
+5b Sebi:   Neues Feld "Colour" in Klasse "Car" hinzufügen (+Konstruktor anpassen)
+		--> Methode Test.testCase() anpassen (wegen Farbe)
+
+6. Sebi:   Aktualisiertes Projekt nach Github pushen
+
+7. Günter: Pullen von Github (+Merge)
+
+7b.Sebi:   Projekt bearbeiten: Neue Klasse "Cabrio" hinzufügen (analog 5a)
+
+public class Cabrio extends Car{
+
+	public Cabrio(String licensePlate, String owner, String address) {
+		super(licensePlate, owner, address);
+	}
+	
+	public String getLicensePlate(){
+		return super.licensePlate+" Cabrio";
+	}
+
+}
+
+
+- Netzwerk fällt aus - 
+
+8. Günter: Projekt auf USB-Stick kopieren und an Sebi weiterreichen
+
+9. Sebi:   Projekt vom Stick pullen (+Merge)
+
+10. Sebi:  Projekt bearbeiten: testCase für SUVs erweitern
+
+- Netzwerk wieder verfügbar -
+
+11. Sebi:  Projekt auf Github pushen
+
